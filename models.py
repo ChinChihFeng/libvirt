@@ -79,7 +79,7 @@ class Host:
             print('Failed to get the domain object', file=sys.stderr)
             sys.exit(1)
         else:
-            print(domainName)
+            #print(domainName)
             ifaces = dom.interfaceAddresses(libvirt.VIR_DOMAIN_INTERFACE_ADDRESSES_SRC_AGENT, 0)
             for (name, val) in ifaces.items():
                 if val['addrs'] and name != 'lo':

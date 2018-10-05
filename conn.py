@@ -30,7 +30,8 @@ for i in hostList:
     dash = '-' * 150
     print(dash)
     print('{:<30} {:<15} {:<45} {:<20} {:<20}'.format('<Hostname>', '<ID>', '<Name>', '<IP>', '<Status>'))
+    #print(info)
     for i in range(len(info)):
-        print('{:<30} {:<15} {:<45} {:<20} {:<20}'.format(info[i]['hostname'],info[i]['id'], info[i]['name'], info[i]['ip'], info[i]['status']))
+        print('{:<30} {:<15} {:<45} {!s:<20} {:<20}'.format(info[i]['hostname'],info[i]['id'], info[i]['name'], info[i]['ip'], info[i]['status']))
     
 #print(info)  
